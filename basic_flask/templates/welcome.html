@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Welcome to the App{% endblock %}
+{% block content %}
+
+    <head>
+     <img src="img_lights.jpg" class="w3-round-large">
+    </head>
+<body>
+    <h1>Welcome {{ user }}, you are {{ age }} years old.</h1>
+    <!-- Logout button -->
+    <form action="{{ url_for('logout') }}" method="GET">
+        <input type="submit" value="Logout" class="w3-container w3-red">
+    </form>
+
+</body>
+
+{% endblock %}
+
